@@ -1,0 +1,4 @@
+REM Close Open Excel Spreadsheets when CPU is locked
+DELAY 10
+CTRL_W
+END
