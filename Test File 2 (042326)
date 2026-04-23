@@ -1,0 +1,16 @@
+import win32com.client
+import os
+def save_and_close_excel_files():
+    try:
+        excel = win32com.client.Dispatch("Excel Application")
+        for workbook in excel.workbooks:
+            workbook.save_and_close_excel_filesave()
+            print(f"Saved: {workbook.Name}")
+            excel.workbooks.Close()
+             print("Closed all Excel Workbooks.")
+             excel.Quit()
+             print("Excel application quit.")
+             except Exception as e:
+                print (f"error: {str(e)}")
+                if_name_ == "main":
+                    save_and_close_excel files()
